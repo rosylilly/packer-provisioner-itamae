@@ -1,0 +1,26 @@
+# packer-provisioner-itamae
+
+packer-provisioner-itamae is a [Packer](http://www.packer.io/) plugin for [Itamae](https://github.com/ryotarai/itamae)
+
+## Basic Example
+
+The example below is fully functional.
+
+```json
+{
+  "type": "itamae",
+  "recipes": ["recipe.rb"]
+}
+```
+
+## Configuration References
+
+The reference of available configuration options is listed below.
+
+Required:
+
+- `recipes` (string) - The recipe file to be executed by itamae. This file must exist on your local system.
+
+Optional:
+
+- `command` (string) - The command to invoke itamae. Default to "itamae".

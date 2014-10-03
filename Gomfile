@@ -1,0 +1,6 @@
+itself 'github.com/rosylilly/packer-provisioner-itamae'
+
+package 'github.com/mitchellh/packer'
+package 'code.google.com/p/go.crypto/ssh'
+package 'github.com/mitchellh/go-fs'
+package 'github.com/mitchellh/multistep'
