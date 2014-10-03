@@ -58,6 +58,10 @@ func (p *Provisioner) Prepare(raws ...interface{}) error {
 		}
 	}
 
+	for _, err := range p.config.validateRecipes() {
+		errs = packer.MultiErrorAppend(errs, err)
+	}
+
 	if errs != nil && len(errs.Errors) > 0 {
 		return errs
 	}
